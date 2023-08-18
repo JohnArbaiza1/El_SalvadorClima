@@ -12,7 +12,8 @@ const departamentosMap = {
     'Usulután': 'Usulutan',
     'La Unión': 'La_Union',
     'Santa Ana': 'Santa_Ana',
-    'San Salvador': 'San_Salvador'
+    'San Salvador': 'San_Salvador',
+    'Morazán': 'Morazan'
 };
 //-----------------------------------------------------------------
 //Objeto El Salvador
@@ -52,9 +53,9 @@ const El_Salvador = (() => {
        IMG.innerHTML = '';
        // Agregamos el icono
        IMG.appendChild(Contenido);
-       Grados.textContent = `${grados}`;
-       GMax.textContent = `Max: ${gradosMax}`;
-       GMin.textContent = `Min: ${gradosMin}`
+       Grados.textContent = `${grados}°C`;
+       GMax.textContent = `Max: ${gradosMax}°C`;
+       GMin.textContent = `Min: ${gradosMin}°C`;
     }
     //----------------------------------------------------------------
     //funcion para convertir los grados
@@ -68,27 +69,31 @@ const El_Salvador = (() => {
         Usulutan: () => callAPI('Usulutan',pais),
         La_Union: () => callAPI('La Unión',pais),
         Santa_Ana: () => callAPI('Santa Ana',pais),
-        San_Salvador: () => callAPI('San Salvador',pais)
+        San_Salvador: () => callAPI('San Salvador',pais),
+        Morazan:() => callAPI('Morazán',pais),
     };
     return {
         ClimaDepartamentos
     } 
 });
 //-----------------------------------------------------------------
-//Evento encargado de la consulta
-consulta.addEventListener('click', (e) =>{
-    e.preventDefault();
-    //Devuelve el valor seleccionado en el select
-    const departamentos = departments.value;
-    //Se encarga de acceder a una clave en el objeto 
-    const departamentoKey = departamentosMap[departamentos];
+//Evento que nos permite que el clima se cambie al elejir automaticamente al seleccionar un Departamento
+departments.addEventListener('change', () => {
+    const selectedDepartment = departments.value;
+    const departamentoKey = departamentosMap[selectedDepartment];
+    
     if (departamentoKey) {
         El_Salvador().ClimaDepartamentos[departamentoKey]();
     } else {
         mensaje.innerHTML = "<span>Debe seleccionar un departamento</span>";
-            //Para que el mensaje se elimine despues de 3 segundos
-            setTimeout(() => {
-                mensaje.innerHTML = "";
-            }, 3000);
+        setTimeout(() => {
+            mensaje.innerHTML = "";
+        }, 3000);
     }
-})
+});
+
+// Estableciendo el departamento que se mostrara por defecto
+const departamentoKey = departamentosMap['Morazán'];
+if (departamentoKey) {
+    El_Salvador().ClimaDepartamentos[departamentoKey]();
+}
