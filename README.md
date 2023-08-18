@@ -23,11 +23,11 @@ Para conocer un poco más de las herramientas implementadas puedes visitar los s
    * https://johnarbaiza1.github.io/El_SalvadorClima/
 
 2. Hacer click en la opción Departamentos
-* ![2023-08-12 17_20_55-Window](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/b3b8772a-51b8-4cce-a6c1-7021d1846167)
+* ![2023-08-17 21_15_47-Window](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/5e2d3c9d-4470-4cec-9d2d-5458f893861c)
 
 3. Elegir una de las opciones que se han desplegado
-   * ![2023-08-12 17_23_36-Clima de El Salvador - Personal_ Microsoft​ Edge](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/6e768402-493b-4ac2-990a-e056998e2a43)
-  
+   * ![2023-08-17 21_16_58-Window](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/d420dc12-d0ae-4ef4-92b1-ec7f6b9e5319)
+
 4. Y listo se mostrara el clima del departamento seleccionado
 
 ## Versionado 📌  
