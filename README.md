@@ -1,6 +1,6 @@
 ## El_SalvadorClima ⛅ ☔
 
-![2023-08-12 16_50_39-Window](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/af9f127b-8cd2-444c-9843-a34f848b924b)
+![2023-08-17 21_03_14-Window](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/d5774d20-8787-4ed3-b604-bd02377860ce)
 
 Es un proyecto que consiste en la creación de una pagina que nos permita por medio del uso de la API OpenWeatherMap poder consultar información climatica de 5 departamentos de nuestro país los cuales son: 
 
@@ -28,8 +28,11 @@ Para conocer un poco más de las herramientas implementadas puedes visitar los s
 3. Elegir una de las opciones que se han desplegado
    * ![2023-08-12 17_23_36-Clima de El Salvador - Personal_ Microsoft​ Edge](https://github.com/JohnArbaiza1/El_SalvadorClima/assets/102486877/6e768402-493b-4ac2-990a-e056998e2a43)
   
-4. Dar click en buscar y listo se mostrara el clima    
+4. Y listo se mostrara el clima del departamento seleccionado
 
+## Versionado 📌  
+* Versión Anterior 1.0
+* Versión Actual 1.1
 
 ## Autor ✒️
 * John Elvis Arbaiza Velásquez
