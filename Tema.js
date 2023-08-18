@@ -13,8 +13,8 @@ CambioTema.addEventListener("click", () =>{
     const moonIcon = '<i class="fas fa-moon"></i>';
 
     if (body.classList.contains("Temas")) {
-        toggleButton.innerHTML = sunIcon; // Cambiar a icono de sol (modo día)
+        CambioTema.innerHTML = sunIcon; // Cambiar a icono de sol (modo día)
       } else {
-        toggleButton.innerHTML = moonIcon; // Cambiar a icono de luna (modo noche)
+        CambioTema.innerHTML = moonIcon; // Cambiar a icono de luna (modo noche)
       }
 });
