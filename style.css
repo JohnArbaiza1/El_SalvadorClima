@@ -35,7 +35,7 @@ body{
 .card{
     width: 32rem;
     height: 32rem;
-    background-color: rgba(48, 48, 48, 0.7);
+    background-color: rgba(12, 12, 12, 0.7);
     border-radius: 10px;
     box-shadow: -1px 2px 6px 5px  #6c6e6ea6;
 }
@@ -52,14 +52,22 @@ body{
     border: solid 2px white;
 }
 
+/*Button para cambiar el tema*/
 .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem; 
     background:rgba(231, 228, 228, 0.4);
-    color: rgb(43, 42, 51);
+    position: absolute;
+    top: 17px;
+    right: 50px;
     border-radius: 20px;
     font-weight: bold;
     border: solid 2px white;
+    color: white;
 }
-
 .btn:hover{
     background-color: rgb(51, 57, 58);
     color: white;
@@ -78,11 +86,20 @@ body{
     color: white; 
     text-decoration: none;
 }
-
 .github-icon:hover{
     color: rgb(146, 187, 194);  
 }
 
+/*Para poder cambiar el tema de la pagina*/
+.Temas .gallery img{
+    filter: brightness(0.4);
+}
+.Temas .gallery img:hover{
+    filter: brightness(0.4) contrast(120%); 
+}
+.Temas .card{
+    background-color: rgba(28, 35, 54, 0.7);
+}
 
 /*Responsive de la app del clima*/
 @media (max-width:769px){
