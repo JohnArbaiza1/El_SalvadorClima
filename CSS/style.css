@@ -9,13 +9,26 @@
 }
 
 body{
-    background: url('IMG/fondo.jpg');
+    background: url('../IMG/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     backdrop-filter: blur(12px);
+    overflow: hidden;
+}
+
+/* Capa de fondo oscuro */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 0.3s ease;
+    z-index: -1; /* Asegura que la capa esté detrás del contenido */
 }
 
 .container{
@@ -26,18 +39,30 @@ body{
 }
 
 .container > .card{
-    width: 320px;
-    height: 500px;
+    width: 350px;
+    height: 560px;
     background: linear-gradient(to top, rgba(66, 65, 65, 0.15), rgba(255, 251, 251, 0.15));
     border-radius: 12px;
     backdrop-filter: blur(100px);
     box-shadow: 2px 2px 20px rgba(3, 126, 126, 0.781);
 }
 
+.github-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: rgb(39, 38, 38); 
+    text-decoration: none;
+}
+.github-icon:hover{
+    color: rgb(46, 93, 120);  
+}
+
 .card > h3 {
     color: rgb(46, 93, 120);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 56px;
 }
 
 /*Contenido de la card*/
@@ -53,7 +78,7 @@ body{
 
 .mapa > img{
     width: 300px;
-    filter: drop-shadow(2px 2px 20px rgb(3, 31, 83) );
+    filter: drop-shadow(2px 2px 20px rgb(4, 91, 172) );
 }
 
 .card-body > span{
@@ -98,3 +123,4 @@ body{
 #MIN{
     color: rgb(46, 93, 120);
 }
+
