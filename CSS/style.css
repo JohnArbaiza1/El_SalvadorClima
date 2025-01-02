@@ -1,0 +1,100 @@
+/*Fuente a emplear*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: url('/IMG/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(12px);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container > .card{
+    width: 320px;
+    height: 500px;
+    background: linear-gradient(to top, rgba(66, 65, 65, 0.15), rgba(255, 251, 251, 0.15));
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    box-shadow: 2px 2px 20px rgba(3, 126, 126, 0.781);
+}
+
+.card > h3 {
+    color: rgb(46, 93, 120);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Contenido de la card*/
+.card > .card-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapa{
+    display: block;  /* El mapa se mostrará por defecto */
+}
+
+.mapa > img{
+    width: 300px;
+    filter: drop-shadow(2px 2px 20px rgb(3, 31, 83) );
+}
+
+.card-body > span{
+    text-align: center;
+}
+
+.mensaje{
+    color: rgb(46, 93, 120);
+    font-weight: 600;
+}
+
+/* Estilo del select*/
+.op{
+    width: 100%;
+}
+
+#Departamentos{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background: rgba(37, 37, 37, 0.205);
+    color: rgb(46, 93, 120);
+    font-weight: 600;
+}
+
+/* Información del clima */
+.info {
+    display: none; /* Ocultamos la información del clima inicialmente */
+    text-align: center;
+}
+
+#departamento{
+    color: rgb(46, 93, 120);
+}
+#grados{
+    color: rgb(46, 93, 120);
+}
+#Max{
+    color: rgb(46, 93, 120);
+}
+#MIN{
+    color: rgb(46, 93, 120);
+}
